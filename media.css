@@ -159,6 +159,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 .trending h3{
     margin:0;
 }
+.trending_box{
+    margin:20px;
+}
 .scroll dl{
     margin:10px 0;
 }
@@ -206,11 +209,8 @@ audio{
     text-align:center;
     font-size: 1em;
     margin: 0 0 0 30px;
+    padding:10px;
     
-    
-}
-.more p{
-    margin:8px;
 }
 .more:hover{
     background-color: #020659;
