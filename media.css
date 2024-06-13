@@ -1,0 +1,420 @@
+header{
+    background-color: #020659;
+}
+html{
+    background-color: #020659;
+}
+body{
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:375px;
+    margin:0;
+}
+h1{
+    margin:0;
+    padding:10px 0;
+}
+h2, h3{
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1em;
+}
+header h2{
+    overflow:hidden;
+    transform: max-height .2s ease-out;
+}
+.trending h3{
+    padding:15px 35px;
+}
+.scroll h3{
+    padding:0;
+}
+
+p, dl, dd{
+    font-size:1em;
+}
+dt{
+    font-style: italic;
+
+}
+dd{
+    margin-left:0;
+}
+
+footer p{
+    font-size:.75em;
+
+}
+
+.muzak{
+    width:375px;
+    background: linear-gradient(90deg, rgba(23,31,186,1) 0%, rgba(25,25,92,1) 38%, rgba(32,38,119,1) 68%, rgba(8,22,159,1) 100%);
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    height:50px;
+    
+}
+.nav_smooth_jazz{
+    width:375px;
+    background: linear-gradient(90deg, rgba(10,14,78,1) 0%, rgba(23,23,55,1) 39%, rgba(34,42,156,1) 57%, rgba(4,5,22,1) 93%);
+    color: #ffffff;
+    text-align: left;
+    margin:0;
+    padding: 10px 0 0 0;
+    height: 170px;
+
+}
+
+nav h2, nav p{
+    margin-left:9%;
+}
+nav ul{
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+    max-height:0;
+    transform: max-height .2s ease-out;
+    
+    
+    
+}
+
+nav li a {
+    display:block;
+    padding:20px 20px;
+    text-decoration: none;
+    color:white;
+    
+}
+
+nav a:hover, nav input:hover{
+    background-color:black;
+}
+
+nav label{
+    cursor: pointer;
+    position:relative;
+    user-select:none;
+    top:-205px;
+    left:10px;
+    
+}
+
+label span{
+    background-color:#ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width:18px;
+}
+
+label span:before, label span:after{
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    height:100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width:100%;
+}
+
+label span:before{
+    top:5px;
+}
+label span:after{
+    top: -5px;
+}
+input{
+    display:none;
+}
+input:checked ~ ul{
+    max-height: 500px;
+}
+input:checked ~ label span{
+    background: transparent;
+}
+input:checked ~ label span:before{
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after{
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after{
+    top:0;
+}
+
+
+.trending{
+    color:#590242;
+    padding:25px 0;
+}
+.trending h2{
+    margin: 15px 25px;
+}
+.trending h3{
+    margin:0;
+}
+.scroll dl{
+    margin:10px 0;
+}
+.scroll{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section{
+    margin:10px;
+    position:relative;
+}
+
+.scroll div{
+    position:absolute;
+    top:251px;
+    background-color: rgba(255,255,255,.75);
+    padding:5px;
+    height:50px;
+    width:350px;
+} 
+dl{
+    display:flex;
+}
+
+dt{
+    padding-right: 5px;
+}
+audio{
+    position:absolute;
+    bottom:150px;
+    left:5px;
+    opacity: 60%;
+
+}
+.more{
+    text-decoration: none;
+    background-color: #590242;
+    color:#ffffff;
+    border-radius: 5px;
+    width:150px;
+    display:block;
+    text-align:center;
+    font-size: 1em;
+    margin: 0 0 0 30px;
+    
+    
+}
+.more p{
+    margin:8px;
+}
+.more:hover{
+    background-color: #020659;
+}
+
+.trending ::-webkit-scrollbar{
+    box-shadow: inset 0 0 15px #590242;
+}
+
+.trending ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #590242;
+}
+
+.trending ::-webkit-scrollbar-thumb{
+    background: #590242;
+    border-radius:5px;
+}
+.trending ::-webkit-scrollbar-hover{
+    background: #020659;
+}
+
+.your_playlists h3{
+    color:#590242;
+    padding: 15px 0 0 35px;
+    margin:30px 0 0 0;
+}
+
+.your_playlists_box{
+    background-color:#2699FB;
+    color: #ffffff;
+    padding:5px;
+    margin:20px 0;
+}
+.your_playlists_box h3{
+    margin:10px 5px;
+}
+.your_playlists_box p{
+    margin:0 5px;
+}
+.best_2020, .pumpkin_spice, .quiet_storm, .smooth_jazz, .smooth_study{
+    background-color: #0D8DFB;
+    text-align: center;
+    margin:10px;
+    padding:15px;
+}
+.best_2020 h3, .pumpkin_spice h3, .quiet_storm h3, .smooth_jazz h3, .smooth_study h3{
+    padding:0;
+    color:#ffffff;
+}
+
+.your_playlists ::-webkit-scrollbar{
+    box-shadow: inset 0 0 15px #0D8DFB;
+}
+
+.your_playlists  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;;
+}
+
+.your_playlists  ::-webkit-scrollbar-thumb{
+    background: #020659;;
+    border-radius:5px;
+}
+.your_playlists  ::-webkit-scrollbar-hover{
+    background: #020659;
+}
+.curated_playlists_box{
+    background-color:#030A8C;
+    margin:20px 0;
+    padding:5px;
+    color:#ffffff
+}
+
+.curated_playlists h3{
+    padding: 15px 0 0 30px;
+    margin-top:30px;
+    color: #590242;
+}
+
+.curated_playlists_box h3{
+    padding: 0;
+    margin:10px 5px;
+    color: #ffffff;
+}
+
+
+
+.boozy_brunch, .dinner_party, .mellow, .jazz_chill, .jazz_sax{
+    background-color: #020659;
+    text-align: center;
+    margin:10px;
+    padding:15px;
+}
+
+.curated_playlists ::-webkit-scrollbar{
+    box-shadow: inset 0 0 15px #0D8DFB;
+}
+
+.curated_playlists  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;;
+}
+
+.curated_playlists  ::-webkit-scrollbar-thumb{
+    background: #020659;;
+    border-radius:5px;
+}
+.curated_playlists  ::-webkit-scrollbar-hover{
+    background: #020659;
+}
+footer{
+    color: #590242;
+    text-align: center;
+    padding:20px;
+    margin:15px 15px 0 15px;
+}
+@media screen and (min-width:834px){
+    .muzak_li{
+        display: none;
+    }
+    nav, .muzak{
+        width:834px;
+        height: fit-content;
+    }
+    
+    .muzak{
+        text-align: left;
+        padding:10px 0;
+        height:max-content;
+    }
+    .muzak h1{
+        padding-left: 15px;
+    }
+    nav ul{
+        overflow:visible;
+        position:relative;
+        float: right;
+        top:-250px;
+        display:flex;
+        align-content: space-around;
+        gap:20px;
+        
+        
+    }
+    nav li a{
+        padding: 20px;
+        
+    }
+    .nav_smooth_jazz h2{
+        color: #ffffff;
+        margin: 0;
+        padding:15px 0 10px 15px;
+    }
+    .nav_smooth_jazz p{
+        color: #ffffff;
+        margin: 0;
+        padding:15px 0 10px 15px;
+    }
+    
+    label span, input{
+        display:none;
+    }
+
+    .nav_smooth_jazz{
+        width: 834px;
+       
+    }
+    nav .smooth_jazz h2, nav .smooth_jazz p{
+        margin:13px 0;
+    }
+    nav a:hover{
+        background-color: #590242;
+    }
+    body{
+        width: 834px;
+    }
+    
+    
+    .your_playlists, .curated_playlists{
+        width:49%;
+        display: inline-block;
+    }
+    
+    .your_playlists_box, .curated_playlists_box{
+        width: 100%;
+    }
+    .your_playlists_box .scroll, .curated_playlists_box .scroll{
+        grid-template-columns: 50%;
+        overflow-y: scroll;
+        max-height: 550px;
+    }
+    .best_2020, .pumpkin_spice, .quiet_storm, .smooth_jazz, .smooth_study, .boozy_brunch, .dinner_party, .mellow, .jazz_chill, .jazz_sax{
+        width:350px;
+        height:120px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 25% 75%;
+        
+    }
+    .best_2020 p, .pumpkin_spice p, .quiet_storm p, .smooth_jazz p, .smooth_study p, .boozy_brunch p, .dinner_party p, .mellow p, .jazz_chill p, .jazz_sax p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 15px;
+
+        margin: 0;
+    }
+    
+   
+}
